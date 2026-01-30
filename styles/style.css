@@ -1,12 +1,14 @@
 body {
   margin: 0;
-  background-image: url(../images/background_header.svg);
   min-width: 1100px;
   max-width: 1600px;
   height: 100vh;
-  background-size: cover;
   font-size: 16px;
   line-height: 20px;
+}
+.header{
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
 }
 
 .logo {
@@ -91,4 +93,164 @@ font-weight: 500;
 font-size: 16px;
 line-height: 20px;
 color: #6F6F6F;
+}
+
+.main-title{
+  font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 44px;
+line-height: 52px;
+padding-top:100px;
+text-align: center;
+}
+
+.form{
+  padding: 80px 0 120px 0;
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-content: center;
+}
+
+.Fieldset{
+  margin: 0 0 32px 0;
+}
+
+.form-labels{
+font-family: "Inter";
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+}
+
+.form-inputs{
+width: 100%;
+height: 60px;
+margin: 8px 0 0 0;
+font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+border-radius: 4px;
+border: #838383 solid 1px;
+}
+
+.submit-button{
+font-family: "Inter";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+color: white;
+background-color: #E96E3A;
+border: none;
+border-radius: 6px; 
+height: 60px;
+width: 392px;
+padding: 0;
+}
+
+.submit-button:hover{
+  opacity: 70%;
+}
+
+.checkbox-content{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 32px 0 0 0;
+  align-items: center;
+}
+.terms-checkbox{
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: #4F4F4F solid;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.terms-checkbox:checked{
+  background-image: url(../images/check.svg);
+  background-color: #E96E3A;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer{
+  background-color: #D35722;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 80px 0 80px;
+  
+}
+
+.footer-circle{
+  width:340px;
+  height: 340px;
+  background-color: #E96E3A;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 40%;
+  right: 80%;
+  z-index: 1;
+}
+
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    z-index: 2;
+    position: relative;
+}
+.social-media-title{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+color: #F2F2F2;
+margin: 0;
+}
+
+.social-media-container{
+ text-align: end;
+}
+.social-media-images{
+    width: 16px;
+    height: 16px;
+}
+
+.social-media-text, .copyright-text{
+font-family: 'Inter';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color:#F2F2F2;
+text-decoration: none;
+}
+
+.social-media-text:hover{
+  color: #FFD6C5;
+}
+
+.social-media-list{
+  list-style: none;
+}
+.social-media-list-items{
+  display: flex;
+  gap: 10px;
+}
+
+.item-1{
+  padding:20px 0 16px 0;
+}
+.copyright-text{
+margin: 108px 0 60px 0;
+
 }

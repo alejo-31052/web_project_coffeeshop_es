@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,11 +17,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
+
   <body>
     <header class="header">
-      <img src="./images/logo_coffeeshop_dark.svg" class="logo" alt="coffee-logo" />
+      <img
+        src="./images/logo_coffeeshop_dark.svg"
+        class="logo"
+        alt="coffee-logo"
+      />
       <nav class="nav">
         <div class="nav-links">
           <a class="nav-link" href="#">Reserva una mesa</a>
@@ -51,7 +57,102 @@
         <p class="info-text">Avenida del Exito 200, ciudad Triple Peaks</p>
       </div>
     </header>
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <main class="content">
+      <h1 class="main-title">Reservar una mesa</h1>
+
+      <form method="post" class="form">
+        <div class="Fieldset">
+          <label class="form-labels" for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            minlength="3"
+            maxlength="20"
+            class="form-inputs"
+            required="true"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="Fieldset">
+          <label class="form-labels" for="dinner-guests"
+            >Numero de comensales</label
+          >
+          <input
+            type="number"
+            min="1"
+            max="8"
+            class="form-inputs"
+            required="true"
+            id="dinner-guests"
+            placeholder="1-8"
+          />
+        </div>
+        <div class="Fieldset">
+          <label class="form-labels" for="date-and-hour">Fecha y hora</label>
+          <input
+            type="datetime-local"
+            id="date-and-hour"
+            class="form-inputs"
+            required="true"
+          />
+        </div>
+        <div class="Fieldset">
+          <label class="form-labels" for="reservation-email"
+            >Tu correo electronico</label
+          >
+          <input
+            type="email"
+            class="form-inputs"
+            required="true"
+            id="reservation-email"
+            placeholder="email@email.com"
+          />
+        </div>
+        <button type="submit" class="submit-button">Reservar una mesa</button>
+        <div class="checkbox-content">
+          <input
+            type="checkbox"
+            id="terms-checkbox"
+            class="terms-checkbox"
+            required="true"
+          />
+          <label class="form-labels" for="terms-checkbox"
+            >Acepto los términos de uso</label
+          >
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer-circle"></div>
+      <div class="footer-header">
+        <img
+          src="./images/logo_coffeeshop_light.svg"
+          alt="logo_white"
+          class="footer-logo"
+        />
+        <div class="social-media-container">
+          <h2 class="social-media-title">Redes Sociales</h2>
+          <ul class="social-media-list">
+            <li class="social-media-list-items item-1">
+              <img
+                src="./images/facebook_white.svg"
+                alt="Facebook-logo"
+                class="social-media-images"
+              />
+              <a href="facebook.com" class="social-media-text">Facebook</a>
+            </li>
+            <li class="social-media-list-items item-2">
+              <img
+                src="./images/instagram_white.svg"
+                alt="Instagram-Logo"
+                class="social-media-images"
+              />
+              <a href="Instagram.com" class="social-media-text">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright-text">&copy 2026 Alejandro Acosta</p>
+    </footer>
   </body>
 </html>
