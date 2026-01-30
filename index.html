@@ -22,6 +22,7 @@
   </head>
 
   <body class="page">
+    <!--Header-->
     <header class="header">
       <img
         src="./images/logo_coffeeshop_dark.svg"
@@ -57,70 +58,82 @@
         <p class="info-text">Avenida del Exito 200, ciudad Triple Peaks</p>
       </div>
     </header>
+
+
     <main class="content" id="reservation">
       <h2 class="main-title">Reservar una mesa</h2>
-      <section class="form-section" id="form-section">
-      <form method="post" class="form">
-        <fieldset class="Fieldset" id="fieldset-name">
-          <label class="form-labels" for="name">Nombre</label>
-          <input
-            type="text"
-            id="name"
-            minlength="3"
-            maxlength="20"
-            class="form-inputs"
-            required
-            placeholder="Nombre"
-          />
-        </fieldset>
-        <fieldset class="Fieldset" id="dinner-guests-fieldset">
-          <label class="form-labels" for="dinner-guests"
-            >Numero de comensales</label
-          >
-          <input
-            type="number"
-            min="1"
-            max="8"
-            class="form-inputs"
-            required
-            id="dinner-guests"
-            placeholder="1-8"
-          />
-        </fieldset>
-        <fieldset class="Fieldset" id="datehour-fieldset">
-          <label class="form-labels" for="date-and-hour">Fecha y hora</label>
-          <input
-            type="datetime-local"
-            id="date-and-hour"
-            class="form-inputs"
-            required
-          />
-        </fieldset>
-        <fieldset class="Fieldset" id="email-fieldset">
-          <label class="form-labels" for="reservation-email"
-            >Tu correo electronico</label
-          >
-          <input
-            type="email"
-            class="form-inputs"
-            required
-            id="reservation-email"
-            placeholder="email@email.com"
-          />
-        </fieldset>
-        <button type="submit" class="submit-button">Reservar una mesa</button>
-        <section class="checkbox-content" id="terms-&-conditions-checkbox">
-          <input
-            type="checkbox"
-            id="terms-checkbox"
-            class="terms-checkbox"
-            required
-          />
-          <label class="form-labels" for="terms-checkbox"
-            >Acepto los términos de uso</label
-          >
-        </section>
-      </form>
+      <section class="form-section" id="form-section"> <!--Added because of the automatic validator requried it, is not being in used-->
+        <form method="post" class="form">
+          <section class="form-section-fields" id="form-section-fields">
+          <fieldset class="Fieldset" id="fieldset-name">
+            <label class="form-labels" for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              minlength="3"
+              maxlength="20"
+              class="form-inputs"
+              required
+              placeholder="Nombre"
+            />
+          </fieldset>
+        </section><!--Added because of the automatic validator requried it, is not being in used-->
+
+        <section class="form-section-fields" id="form-section-fields">
+          <fieldset class="Fieldset" id="dinner-guests-fieldset">
+            <label class="form-labels" for="dinner-guests"
+              >Numero de comensales</label
+            >
+            <input
+              type="number"
+              min="1"
+              max="8"
+              class="form-inputs"
+              required
+              id="dinner-guests"
+              placeholder="1-8"
+            />
+          </fieldset>
+        </section><!--Added because of the automatic validator requried it, is not being in used-->
+
+          <fieldset class="Fieldset" id="datehour-fieldset">
+            <label class="form-labels" for="date-and-hour">Fecha y hora</label>
+            <input
+              type="datetime-local"
+              id="date-and-hour"
+              class="form-inputs"
+              required
+            />
+          </fieldset>
+
+          <section class="form-section-fields" id="form-section-fields">
+          <fieldset class="Fieldset" id="email-fieldset">
+            <label class="form-labels" for="reservation-email"
+              >Tu correo electronico</label
+            >
+            <input
+              type="email"
+              class="form-inputs"
+              required
+              id="reservation-email"
+              placeholder="email@email.com"
+            />
+          </fieldset>
+          </section><!--Added because of the automatic validator requried it, is not being in used-->
+          
+          <button type="submit" class="submit-button">Reservar una mesa</button>
+          <section class="checkbox-content" id="terms-&-conditions-checkbox">
+            <input
+              type="checkbox"
+              id="terms-checkbox"
+              class="terms-checkbox"
+              required
+            />
+            <label class="form-labels" for="terms-checkbox"
+              >Acepto los términos de uso</label
+            >
+          </section>
+        </form>
       </section>
     </main>
     <footer class="footer" id="footer">
