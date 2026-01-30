@@ -59,7 +59,7 @@
     </header>
     <main class="content" id="reservation">
       <h2 class="main-title">Reservar una mesa</h2>
-      <section>
+      <section class="form-section">
       <form method="post" class="form">
         <fieldset class="Fieldset" id="fieldset-name">
           <label class="form-labels" for="name">Nombre</label>
@@ -69,7 +69,7 @@
             minlength="3"
             maxlength="20"
             class="form-inputs"
-            required="true"
+            required
             placeholder="Nombre"
           />
         </fieldset>
@@ -82,7 +82,7 @@
             min="1"
             max="8"
             class="form-inputs"
-            required="true"
+            required
             id="dinner-guests"
             placeholder="1-8"
           />
@@ -93,7 +93,7 @@
             type="datetime-local"
             id="date-and-hour"
             class="form-inputs"
-            required="true"
+            required
           />
         </fieldset>
         <fieldset class="Fieldset" id="email-fieldset">
@@ -103,7 +103,7 @@
           <input
             type="email"
             class="form-inputs"
-            required="true"
+            required
             id="reservation-email"
             placeholder="email@email.com"
           />
@@ -114,7 +114,7 @@
             type="checkbox"
             id="terms-checkbox"
             class="terms-checkbox"
-            required="true"
+            required
           />
           <label class="form-labels" for="terms-checkbox"
             >Acepto los términos de uso</label
