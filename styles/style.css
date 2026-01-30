@@ -18,14 +18,14 @@ body {
   top: 30px;
   left: 26px;
 }
-.nav-links {
+.nav__links {
   list-style: none;
   display: flex;
   justify-content: end;
   gap: 20px;
   padding: 0 26px 0 0;
 }
-.nav-link {
+.nav__link {
   text-decoration: none;
   color: black;
   font-family: Inter, Arial, sans-serif;
@@ -46,7 +46,7 @@ body {
   color: #ff976b;
 }
 
-.header-image {
+.header__image {
   width: 646px;
   height: 568px;
   position: absolute;
@@ -65,7 +65,7 @@ max-width: 709px;
 margin:183px 0 28px 0;
 }
 
-.header-description{
+.header__description{
     font-family: "Noto Serif", 'Times New Roman', serif;
     font-style: normal;
     font-weight: normal;
@@ -75,7 +75,7 @@ margin:183px 0 28px 0;
     margin:0;
 }
 
-.header-title, .header-description{
+.header-title, .header__description{
   padding-left:80px;
 }
 .header-info{
