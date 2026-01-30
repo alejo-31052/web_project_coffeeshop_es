@@ -59,9 +59,9 @@
     </header>
     <main class="content" id="reservation">
       <h2 class="main-title">Reservar una mesa</h2>
-
+      <section>
       <form method="post" class="form">
-        <section class="Fieldset">
+        <fieldset class="Fieldset" id="fieldset-name">
           <label class="form-labels" for="name">Nombre</label>
           <input
             type="text"
@@ -72,8 +72,8 @@
             required="true"
             placeholder="Nombre"
           />
-        </section>
-        <section class="Fieldset">
+        </fieldset>
+        <fieldset class="Fieldset" id="dinner-guests-fieldset">
           <label class="form-labels" for="dinner-guests"
             >Numero de comensales</label
           >
@@ -86,8 +86,8 @@
             id="dinner-guests"
             placeholder="1-8"
           />
-        </section>
-        <section class="Fieldset">
+        </fieldset>
+        <fieldset class="Fieldset" id="datehour-fieldset">
           <label class="form-labels" for="date-and-hour">Fecha y hora</label>
           <input
             type="datetime-local"
@@ -95,8 +95,8 @@
             class="form-inputs"
             required="true"
           />
-        </section>
-        <section class="Fieldset">
+        </fieldset>
+        <fieldset class="Fieldset" id="email-fieldset">
           <label class="form-labels" for="reservation-email"
             >Tu correo electronico</label
           >
@@ -107,7 +107,7 @@
             id="reservation-email"
             placeholder="email@email.com"
           />
-        </section>
+        </fieldset>
         <button type="submit" class="submit-button">Reservar una mesa</button>
         <section class="checkbox-content">
           <input
@@ -121,6 +121,7 @@
           >
         </section>
       </form>
+      </section>
     </main>
     <footer class="footer" id="footer">
       <div class="footer-circle"></div>
