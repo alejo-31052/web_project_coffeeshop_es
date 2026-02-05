@@ -95,17 +95,20 @@ line-height: 20px;
 color: #6F6F6F;
 }
 
-.main-title{
+.reservation{
+  padding-top:100px;
+}
+
+.reservation__title{
   font-family: "Inter";
 font-style: normal;
 font-weight: 500;
 font-size: 44px;
 line-height: 52px;
-padding-top:100px;
 text-align: center;
 }
 
-.form{
+.reservation__form{
   padding: 80px 0 120px 0;
   max-width: 385px;
   display: flex;
