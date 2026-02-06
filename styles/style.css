@@ -95,6 +95,12 @@ line-height: 20px;
 color: #6F6F6F;
 }
 
+.content{
+    background-image: url('../images/background_reservation.svg');
+    background-color: #FFD6C5;
+}
+
+
 .reservation{
   padding-top:100px;
 }
@@ -185,7 +191,7 @@ padding: 0;
   background-position: center;
 }
 
-.footer{
+.footer__content{
   background-color: #D35722;
   position: relative;
   overflow: hidden;
@@ -193,7 +199,7 @@ padding: 0;
   
 }
 
-.footer-circle{
+.footer__circle{
   width:340px;
   height: 340px;
   background-color: #E96E3A;
@@ -221,7 +227,7 @@ color: #F2F2F2;
 margin: 0;
 }
 
-.social-media-container{
+.footer__social{
  text-align: end;
 }
 .social-media-images{
@@ -229,7 +235,7 @@ margin: 0;
     height: 16px;
 }
 
-.social-media-text, .copyright-text{
+.social-media-text, .footer__copyright{
 font-family: 'Inter';
 font-style: normal;
 font-weight: normal;
@@ -254,7 +260,7 @@ text-decoration: none;
 .item-1{
   padding:20px 0 16px 0;
 }
-.copyright-text{
+.footer__copyright{
 margin: 108px 0 60px 0;
 
 }
